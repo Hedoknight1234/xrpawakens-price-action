@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XRPAWAKENS Token Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .dashboard-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-indigo-50 to-blue-50 min-h-screen">
+    <div class="dashboard-container">
+        <!-- Header -->
+        <div class="flex items-center gap-4 mb-8">
+            <div class="bg-indigo-600 p-3 rounded-xl">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                </svg>
+            </div>
+            <div>
+                <h1 class="text-3xl font-bold text-gray-900">XRPAWAKENS</h1>
+                <p class="text-gray-600">XRP Ledger Token Dashboard</p>
+            </div>
+        </div>
+
+        <!-- Token Info -->
+        <div class="card mb-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <h3 class="text-sm text-gray-600">Token ID</h3>
+                    <p class="text-md font-mono">5852504157414B454E5300000000000000000000</p>
+                </div>
+                <div>
+                    <h3 class="text-sm text-gray-600">Issuer Address</h3>
+                    <p class="text-md font-mono">r9Bc54fqEjWx6xVaL7KLvETHZY65bwfBpE</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Stats -->
+        <div class="grid-container">
+            <div class="card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-gray-600 font-medium">Total Supply</h3>
+                    <div class="text-indigo-600 flex items-center">
+                        <span class="font-semibold">Fixed</span>
+                    </div>
+                </div>
+                <p class="text-2xl font-bold text-gray-900">100,000,000,000 XRPA</p>
+            </div>
+
+            <div class="card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-gray-600 font-medium">Currency Code</h3>
+                </div>
+                <p class="text-2xl font-bold text-gray-900">XRPAWAKENS</p>
+            </div>
+
+            <div class="card">
+                <div class="flex justify-between items-start mb-4">
+                    <h3 class="text-gray-600 font-medium">Network</h3>
+                </div>
+                <p class="text-2xl font-bold text-gray-900">XRP Ledger</p>
+            </div>
+        </div>
+
+        <!-- Additional Info -->
+        <div class="grid-container">
+            <div class="card">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="bg-indigo-100 p-2 rounded-lg">
+                        <span class="text-indigo-600">🔗</span>
+                    </div>
+                    <h3 class="text-gray-600 font-medium">Token Type</h3>
+                </div>
+                <p class="text-2xl font-bold text-gray-900">Native XRPL Token</p>
+            </div>
+
+            <div class="card">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="bg-indigo-100 p-2 rounded-lg">
+                        <span class="text-indigo-600">📊</span>
+                    </div>
+                    <h3 class="text-gray-600 font-medium">Decimal Places</h3>
+                </div>
+                <p class="text-2xl font-bold text-gray-900">6</p>
+            </div>
+
+            <div class="card">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="bg-indigo-100 p-2 rounded-lg">
+                        <span class="text-indigo-600">🔒</span>
+                    </div>
+                    <h3 class="text-gray-600 font-medium">Status</h3>
+                </div>
+                <p class="text-2xl font-bold text-gray-900">Active</p>
+            </div>
+        </div>
+
+        <!-- Links -->
+        <div class="mt-8 card">
+            <h3 class="text-lg font-semibold mb-4">Token Explorer Links</h3>
+            <div class="flex flex-col gap-2">
+                <a href="https://firstledger.net/token/r9Bc54fqEjWx6xVaL7KLvETHZY65bwfBpE/5852504157414B454E5300000000000000000000" 
+                   class="text-indigo-600 hover:text-indigo-800 flex items-center gap-2"
+                   target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                        <polyline points="15 3 21 3 21 9"></polyline>
+                        <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                    View on FirstLedger
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
